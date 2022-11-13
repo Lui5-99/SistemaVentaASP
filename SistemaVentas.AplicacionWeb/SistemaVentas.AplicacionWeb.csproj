@@ -12,4 +12,24 @@
     <ProjectReference Include="..\SistemaVentas.IOC\SistemaVentas.IOC.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Views\Negocio\" />
+    <None Remove="Views\Categoria\" />
+    <None Remove="Views\Producto\" />
+    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <None Remove="Swashbuckle.AspNetCore" />
+    <None Remove="Views\HistorialVenta\" />
+    <None Remove="Views\Reporte\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Negocio\" />
+    <Folder Include="Views\Categoria\" />
+    <Folder Include="Views\Producto\" />
+    <Folder Include="Views\HistorialVenta\" />
+    <Folder Include="Views\Reporte\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+  </ItemGroup>
 </Project>

@@ -23,6 +23,10 @@ namespace SistemaVentas.IOC
             {
                 options.UseSqlServer(config.GetConnectionString("cadenaSQL"));
             });
+
+            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
+            services.AddScoped<IVentaRepository, VentaRepository>();
         }
     }
 }
